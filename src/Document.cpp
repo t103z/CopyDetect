@@ -75,7 +75,8 @@ std::ostream &operator<<(std::ostream &os, const Document &doc)
     return os;
 }
 
-
-
-
+std::size_t Document::line_number() const
+{
+    return _line_num;
+}
 

@@ -17,8 +17,9 @@ public:
     virtual ~Document() {}
     virtual std::string GetLine(int linenum) const;
     virtual bool Load(const std::string &filename);
-    bool good() const;
-    const std::string name() const;
+    virtual bool good() const;
+    virtual const std::string name() const;
+    std::size_t line_number() const;
 
     friend std::ostream& operator<<(std::ostream& os, const Document &doc);
 

@@ -26,7 +26,7 @@ CMPDocument::CMPDocument(const CMPDocument &doc) : Document(doc), _lexer(doc._le
 }
 
 
-CPPDocument::CPPDocument(const std::string &filename) : CMPDocument(filename)
+CPPDocument::CPPDocument(const std::string &filename, std::size_t id) : CMPDocument(filename, id)
 {
     _stream.clear();
     _stream.seekg(0, _stream.beg);
@@ -34,5 +34,8 @@ CPPDocument::CPPDocument(const std::string &filename) : CMPDocument(filename)
     tokenize();
 
     _fingerprint_strategy = new WinnowingStrategy();
+    _stream.clear();
+    _stream.seekg(0, _stream.beg);
+    _finger_prints = _fingerprint_strategy->GetFingerPrint(_stream, _name, _id);
 }
 
