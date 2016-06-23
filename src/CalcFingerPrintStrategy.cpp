@@ -4,7 +4,7 @@
 
 #include "CalcFingerPrintStrategy.h"
 
-std::vector<FingerPrint> &&WinnowingStrategy::GetFingerPrint(std::istream &input)
+std::vector<FingerPrint> &&WinnowingStrategy::GetFingerPrint(std::istream &input, const std::string &name)
 {
     using namespace std;
     vector<FingerPrint> fp;
