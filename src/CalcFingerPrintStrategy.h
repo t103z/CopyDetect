@@ -12,13 +12,13 @@
 class CalcFingerPrintStrategy
 {
 public:
-    virtual std::vector<FingerPrint>&& GetFingerPrint(std::istream &input, const std::string &name) = 0;
+    virtual std::vector<FingerPrint> &&GetFingerPrint(std::istream &input, const std::string &name, size_t id) = 0;
 };
 
 class WinnowingStrategy : public CalcFingerPrintStrategy
 {
 public:
-    virtual std::vector<FingerPrint>&& GetFingerPrint(std::istream &input, const std::string &name);
+    virtual std::vector<FingerPrint> &&GetFingerPrint(std::istream &input, const std::string &name, size_t id);
 };
 
 

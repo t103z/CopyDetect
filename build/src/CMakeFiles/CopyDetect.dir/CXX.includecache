@@ -11,6 +11,8 @@ CMPDocument.h
 /home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.h
 
 /home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.h
+memory
+-
 Document.h
 /home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.h
 Lexer.h
@@ -31,6 +33,10 @@ FingerPrint.h
 /home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.h
 
 /home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.cpp
+list
+-
+map
+-
 Detector.h
 /home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.h
 
@@ -98,6 +104,8 @@ unistd.h
 iostream
 -
 fstream
+-
+map
 -
 CMPDocument.h
 /home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.h

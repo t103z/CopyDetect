@@ -7,14 +7,26 @@
 
 #include "CMPDocument.h"
 
+
 class BaseDetector
 {
+public:
+    BaseDetector(std::vector<CMPDocument*> &docs) : _docs(docs) { }
+
+    virtual void Check(std::ostream &output) = 0;
+
 protected:
-    std::vector<CMPDocument> _docs;
+    std::vector<CMPDocument *> &_docs;
 };
 
-class Detector
+class Detector : public BaseDetector
 {
+
+public:
+    Detector(std::vector<CMPDocument*> &docs) : BaseDetector(docs) { }
+
+    virtual void Check(std::ostream &output) override;
+
 
 };
 

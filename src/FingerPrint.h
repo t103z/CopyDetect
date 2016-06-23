@@ -12,6 +12,7 @@ struct Info
 {
     std::string file_name;
     size_t      line_number;
+    size_t      id;
 };
 
 struct FingerPrint
