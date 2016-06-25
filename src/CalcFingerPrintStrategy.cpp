@@ -3,6 +3,7 @@
 //
 
 #include <iostream>
+#include <sstream>
 #include <limits.h>
 #include <vector>
 #include <string>
@@ -47,7 +48,8 @@ std::vector<FingerPrint> &&WinnowingStrategy::GetFingerPrint(std::istream &input
     using namespace std;
     vector<FingerPrint> fp;
     //TODO
-
+    istringstream stringinput = dynamic_cast<istringstream>(input);
+    string str = stringinput.str();
     //better need to input the k-gram number and window-len number by the user
     //when calling this function
     Set_K_gram(5);
@@ -62,11 +64,13 @@ std::vector<FingerPrint> &&WinnowingStrategy::GetFingerPrint(std::istream &input
     int min_index = 0;
     int count = 0;
     size_t line_count = 1;
-    string str;
-    char nowchar;
-    while(input.get(nowchar)) {
-        str[count] = nowchar;
-        count ++;
+
+    while(true) {
+        if(count == str.length() - k_gram_len)
+            break;
+        else {
+            count++;
+        }
 
         right_end = (right_end + 1) % window_len;
         if(str[count] == '\n') {
