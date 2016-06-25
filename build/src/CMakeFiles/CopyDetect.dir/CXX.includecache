@@ -6,81 +6,97 @@
 
 #IncludeRegexTransform: 
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.cpp
+/home/wangp/oop/CopyDetect/src/CMPDocument.cpp
 CMPDocument.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.h
+/home/wangp/oop/CopyDetect/src/CMPDocument.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.h
+/home/wangp/oop/CopyDetect/src/CMPDocument.h
 memory
 -
 Document.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.h
+/home/wangp/oop/CopyDetect/src/Document.h
 Lexer.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Lexer.h
+/home/wangp/oop/CopyDetect/src/Lexer.h
 FingerPrint.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.h
+/home/wangp/oop/CopyDetect/src/FingerPrint.h
 CalcFingerPrintStrategy.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CalcFingerPrintStrategy.h
+/home/wangp/oop/CopyDetect/src/CalcFingerPrintStrategy.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CalcFingerPrintStrategy.cpp
+/home/wangp/oop/CopyDetect/src/CalcFingerPrintStrategy.cpp
+iostream
+-
+limits.h
+-
+vector
+-
+string
+-
+cstdio
+-
+cstdlib
+-
 CalcFingerPrintStrategy.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CalcFingerPrintStrategy.h
+/home/wangp/oop/CopyDetect/src/CalcFingerPrintStrategy.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CalcFingerPrintStrategy.h
+/home/wangp/oop/CopyDetect/src/CalcFingerPrintStrategy.h
 vector
 -
 FingerPrint.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.h
+/home/wangp/oop/CopyDetect/src/FingerPrint.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.cpp
+/home/wangp/oop/CopyDetect/src/Detector.cpp
 list
 -
 map
 -
+algorithm
+-
+cstring
+-
 Detector.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.h
+/home/wangp/oop/CopyDetect/src/Detector.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.h
+/home/wangp/oop/CopyDetect/src/Detector.h
 CMPDocument.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.h
+/home/wangp/oop/CopyDetect/src/CMPDocument.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.cpp
+/home/wangp/oop/CopyDetect/src/Document.cpp
 Document.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.h
+/home/wangp/oop/CopyDetect/src/Document.h
 fstream
 -
 iostream
 -
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.h
+/home/wangp/oop/CopyDetect/src/Document.h
 sstream
 -
 vector
 -
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.cpp
+/home/wangp/oop/CopyDetect/src/FingerPrint.cpp
 FingerPrint.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.h
+/home/wangp/oop/CopyDetect/src/FingerPrint.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.h
+/home/wangp/oop/CopyDetect/src/FingerPrint.h
 string
 -
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/FlexLexer.h
+/home/wangp/oop/CopyDetect/src/FlexLexer.h
 iostream
 -
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Lexer.cpp
+/home/wangp/oop/CopyDetect/src/Lexer.cpp
 Lexer.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Lexer.h
+/home/wangp/oop/CopyDetect/src/Lexer.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/Lexer.h
+/home/wangp/oop/CopyDetect/src/Lexer.h
 iostream
 -
 FlexLexer.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/FlexLexer.h
+/home/wangp/oop/CopyDetect/src/FlexLexer.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/lex.yy.cc
+/home/wangp/oop/CopyDetect/src/lex.yy.cc
 inttypes.h
 -
 iostream
@@ -96,19 +112,19 @@ cstring
 FlexLexer.h
 -
 scanner.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/scanner.h
+/home/wangp/oop/CopyDetect/src/scanner.h
 unistd.h
 -
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/main.cpp
+/home/wangp/oop/CopyDetect/src/main.cpp
 iostream
 -
 fstream
 -
-map
--
 CMPDocument.h
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.h
+/home/wangp/oop/CopyDetect/src/CMPDocument.h
+Detector.h
+/home/wangp/oop/CopyDetect/src/Detector.h
 
-/home/zhang/courses/OOP/team_proj/CopyDetect/src/scanner.h
+/home/wangp/oop/CopyDetect/src/scanner.h
 

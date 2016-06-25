@@ -1,5 +1,5 @@
-/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles/edit_cache.dir
-/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles/rebuild_cache.dir
-/home/zhang/courses/OOP/team_proj/CopyDetect/build/src/CMakeFiles/edit_cache.dir
-/home/zhang/courses/OOP/team_proj/CopyDetect/build/src/CMakeFiles/rebuild_cache.dir
-/home/zhang/courses/OOP/team_proj/CopyDetect/build/src/CMakeFiles/CopyDetect.dir
+/home/wangp/oop/CopyDetect/build/CMakeFiles/edit_cache.dir
+/home/wangp/oop/CopyDetect/build/CMakeFiles/rebuild_cache.dir
+/home/wangp/oop/CopyDetect/build/src/CMakeFiles/edit_cache.dir
+/home/wangp/oop/CopyDetect/build/src/CMakeFiles/rebuild_cache.dir
+/home/wangp/oop/CopyDetect/build/src/CMakeFiles/CopyDetect.dir

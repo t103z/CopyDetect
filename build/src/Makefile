@@ -48,18 +48,18 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhang/courses/OOP/team_proj/CopyDetect
+CMAKE_SOURCE_DIR = /home/wangp/oop/CopyDetect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhang/courses/OOP/team_proj/CopyDetect/build
+CMAKE_BINARY_DIR = /home/wangp/oop/CopyDetect/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles /home/zhang/courses/OOP/team_proj/CopyDetect/build/src/CMakeFiles/progress.marks
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles 0
+	cd /home/wangp/oop/CopyDetect/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/wangp/oop/CopyDetect/build/CMakeFiles /home/wangp/oop/CopyDetect/build/src/CMakeFiles/progress.marks
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wangp/oop/CopyDetect/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/wangp/oop/CopyDetect/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/CopyDetect.dir/rule:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/CopyDetect.dir/rule
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/CopyDetect.dir/rule
 .PHONY : src/CMakeFiles/CopyDetect.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ CopyDetect: src/CMakeFiles/CopyDetect.dir/rule
 
 # fast build rule for target.
 CopyDetect/fast:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/build
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/build
 .PHONY : CopyDetect/fast
 
 CMPDocument.o: CMPDocument.cpp.o
@@ -131,7 +131,7 @@ CMPDocument.o: CMPDocument.cpp.o
 
 # target to build an object file
 CMPDocument.cpp.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o
 .PHONY : CMPDocument.cpp.o
 
 CMPDocument.i: CMPDocument.cpp.i
@@ -140,7 +140,7 @@ CMPDocument.i: CMPDocument.cpp.i
 
 # target to preprocess a source file
 CMPDocument.cpp.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.i
 .PHONY : CMPDocument.cpp.i
 
 CMPDocument.s: CMPDocument.cpp.s
@@ -149,7 +149,7 @@ CMPDocument.s: CMPDocument.cpp.s
 
 # target to generate assembly for a file
 CMPDocument.cpp.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.s
 .PHONY : CMPDocument.cpp.s
 
 CalcFingerPrintStrategy.o: CalcFingerPrintStrategy.cpp.o
@@ -158,7 +158,7 @@ CalcFingerPrintStrategy.o: CalcFingerPrintStrategy.cpp.o
 
 # target to build an object file
 CalcFingerPrintStrategy.cpp.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o
 .PHONY : CalcFingerPrintStrategy.cpp.o
 
 CalcFingerPrintStrategy.i: CalcFingerPrintStrategy.cpp.i
@@ -167,7 +167,7 @@ CalcFingerPrintStrategy.i: CalcFingerPrintStrategy.cpp.i
 
 # target to preprocess a source file
 CalcFingerPrintStrategy.cpp.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.i
 .PHONY : CalcFingerPrintStrategy.cpp.i
 
 CalcFingerPrintStrategy.s: CalcFingerPrintStrategy.cpp.s
@@ -176,7 +176,7 @@ CalcFingerPrintStrategy.s: CalcFingerPrintStrategy.cpp.s
 
 # target to generate assembly for a file
 CalcFingerPrintStrategy.cpp.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.s
 .PHONY : CalcFingerPrintStrategy.cpp.s
 
 Detector.o: Detector.cpp.o
@@ -185,7 +185,7 @@ Detector.o: Detector.cpp.o
 
 # target to build an object file
 Detector.cpp.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Detector.cpp.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Detector.cpp.o
 .PHONY : Detector.cpp.o
 
 Detector.i: Detector.cpp.i
@@ -194,7 +194,7 @@ Detector.i: Detector.cpp.i
 
 # target to preprocess a source file
 Detector.cpp.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Detector.cpp.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Detector.cpp.i
 .PHONY : Detector.cpp.i
 
 Detector.s: Detector.cpp.s
@@ -203,7 +203,7 @@ Detector.s: Detector.cpp.s
 
 # target to generate assembly for a file
 Detector.cpp.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Detector.cpp.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Detector.cpp.s
 .PHONY : Detector.cpp.s
 
 Document.o: Document.cpp.o
@@ -212,7 +212,7 @@ Document.o: Document.cpp.o
 
 # target to build an object file
 Document.cpp.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Document.cpp.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Document.cpp.o
 .PHONY : Document.cpp.o
 
 Document.i: Document.cpp.i
@@ -221,7 +221,7 @@ Document.i: Document.cpp.i
 
 # target to preprocess a source file
 Document.cpp.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Document.cpp.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Document.cpp.i
 .PHONY : Document.cpp.i
 
 Document.s: Document.cpp.s
@@ -230,7 +230,7 @@ Document.s: Document.cpp.s
 
 # target to generate assembly for a file
 Document.cpp.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Document.cpp.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Document.cpp.s
 .PHONY : Document.cpp.s
 
 FingerPrint.o: FingerPrint.cpp.o
@@ -239,7 +239,7 @@ FingerPrint.o: FingerPrint.cpp.o
 
 # target to build an object file
 FingerPrint.cpp.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o
 .PHONY : FingerPrint.cpp.o
 
 FingerPrint.i: FingerPrint.cpp.i
@@ -248,7 +248,7 @@ FingerPrint.i: FingerPrint.cpp.i
 
 # target to preprocess a source file
 FingerPrint.cpp.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.i
 .PHONY : FingerPrint.cpp.i
 
 FingerPrint.s: FingerPrint.cpp.s
@@ -257,7 +257,7 @@ FingerPrint.s: FingerPrint.cpp.s
 
 # target to generate assembly for a file
 FingerPrint.cpp.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.s
 .PHONY : FingerPrint.cpp.s
 
 Lexer.o: Lexer.cpp.o
@@ -266,7 +266,7 @@ Lexer.o: Lexer.cpp.o
 
 # target to build an object file
 Lexer.cpp.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o
 .PHONY : Lexer.cpp.o
 
 Lexer.i: Lexer.cpp.i
@@ -275,7 +275,7 @@ Lexer.i: Lexer.cpp.i
 
 # target to preprocess a source file
 Lexer.cpp.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Lexer.cpp.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Lexer.cpp.i
 .PHONY : Lexer.cpp.i
 
 Lexer.s: Lexer.cpp.s
@@ -284,7 +284,7 @@ Lexer.s: Lexer.cpp.s
 
 # target to generate assembly for a file
 Lexer.cpp.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Lexer.cpp.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/Lexer.cpp.s
 .PHONY : Lexer.cpp.s
 
 lex.yy.o: lex.yy.cc.o
@@ -293,7 +293,7 @@ lex.yy.o: lex.yy.cc.o
 
 # target to build an object file
 lex.yy.cc.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o
 .PHONY : lex.yy.cc.o
 
 lex.yy.i: lex.yy.cc.i
@@ -302,7 +302,7 @@ lex.yy.i: lex.yy.cc.i
 
 # target to preprocess a source file
 lex.yy.cc.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/lex.yy.cc.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/lex.yy.cc.i
 .PHONY : lex.yy.cc.i
 
 lex.yy.s: lex.yy.cc.s
@@ -311,7 +311,7 @@ lex.yy.s: lex.yy.cc.s
 
 # target to generate assembly for a file
 lex.yy.cc.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/lex.yy.cc.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/lex.yy.cc.s
 .PHONY : lex.yy.cc.s
 
 main.o: main.cpp.o
@@ -320,7 +320,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/main.cpp.o
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -329,7 +329,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/main.cpp.i
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -338,7 +338,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/main.cpp.s
+	cd /home/wangp/oop/CopyDetect/build && $(MAKE) -f src/CMakeFiles/CopyDetect.dir/build.make src/CMakeFiles/CopyDetect.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -385,6 +385,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/wangp/oop/CopyDetect/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

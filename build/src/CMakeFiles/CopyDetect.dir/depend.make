@@ -37,6 +37,7 @@ src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o: ../src/scanner.h
 
 src/CMakeFiles/CopyDetect.dir/main.cpp.o: ../src/CMPDocument.h
 src/CMakeFiles/CopyDetect.dir/main.cpp.o: ../src/CalcFingerPrintStrategy.h
+src/CMakeFiles/CopyDetect.dir/main.cpp.o: ../src/Detector.h
 src/CMakeFiles/CopyDetect.dir/main.cpp.o: ../src/Document.h
 src/CMakeFiles/CopyDetect.dir/main.cpp.o: ../src/FingerPrint.h
 src/CMakeFiles/CopyDetect.dir/main.cpp.o: ../src/FlexLexer.h

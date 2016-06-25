@@ -1,4 +1,4 @@
-# Install script for directory: /home/zhang/courses/OOP/team_proj/CopyDetect/src
+# Install script for directory: /home/wangp/oop/CopyDetect/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

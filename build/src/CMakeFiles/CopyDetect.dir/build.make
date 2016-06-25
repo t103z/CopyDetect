@@ -43,10 +43,10 @@ RM = /usr/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhang/courses/OOP/team_proj/CopyDetect
+CMAKE_SOURCE_DIR = /home/wangp/oop/CopyDetect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhang/courses/OOP/team_proj/CopyDetect/build
+CMAKE_BINARY_DIR = /home/wangp/oop/CopyDetect/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/CopyDetect.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/CopyDetect.dir/flags.make
 
 src/CMakeFiles/CopyDetect.dir/main.cpp.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/CopyDetect.dir/main.cpp.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/main.cpp.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/CopyDetect.dir/main.cpp.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/main.cpp.o -c /home/wangp/oop/CopyDetect/src/main.cpp
 
 src/CMakeFiles/CopyDetect.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/main.cpp.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/main.cpp > CMakeFiles/CopyDetect.dir/main.cpp.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/main.cpp > CMakeFiles/CopyDetect.dir/main.cpp.i
 
 src/CMakeFiles/CopyDetect.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/main.cpp.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/main.cpp -o CMakeFiles/CopyDetect.dir/main.cpp.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/main.cpp -o CMakeFiles/CopyDetect.dir/main.cpp.s
 
 src/CMakeFiles/CopyDetect.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/CopyDetect.dir/main.cpp.o.provides.build: src/CMakeFiles/CopyDete
 
 src/CMakeFiles/CopyDetect.dir/Document.cpp.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/Document.cpp.o: ../src/Document.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/CopyDetect.dir/Document.cpp.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/Document.cpp.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/CopyDetect.dir/Document.cpp.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/Document.cpp.o -c /home/wangp/oop/CopyDetect/src/Document.cpp
 
 src/CMakeFiles/CopyDetect.dir/Document.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/Document.cpp.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.cpp > CMakeFiles/CopyDetect.dir/Document.cpp.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/Document.cpp > CMakeFiles/CopyDetect.dir/Document.cpp.i
 
 src/CMakeFiles/CopyDetect.dir/Document.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/Document.cpp.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/Document.cpp -o CMakeFiles/CopyDetect.dir/Document.cpp.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/Document.cpp -o CMakeFiles/CopyDetect.dir/Document.cpp.s
 
 src/CMakeFiles/CopyDetect.dir/Document.cpp.o.requires:
 
@@ -107,16 +107,16 @@ src/CMakeFiles/CopyDetect.dir/Document.cpp.o.provides.build: src/CMakeFiles/Copy
 
 src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o: ../src/CMPDocument.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o -c /home/wangp/oop/CopyDetect/src/CMPDocument.cpp
 
 src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/CMPDocument.cpp.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.cpp > CMakeFiles/CopyDetect.dir/CMPDocument.cpp.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/CMPDocument.cpp > CMakeFiles/CopyDetect.dir/CMPDocument.cpp.i
 
 src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/CMPDocument.cpp.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/CMPDocument.cpp -o CMakeFiles/CopyDetect.dir/CMPDocument.cpp.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/CMPDocument.cpp -o CMakeFiles/CopyDetect.dir/CMPDocument.cpp.s
 
 src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o.requires:
 
@@ -131,16 +131,16 @@ src/CMakeFiles/CopyDetect.dir/CMPDocument.cpp.o.provides.build: src/CMakeFiles/C
 
 src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o: ../src/lex.yy.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/lex.yy.cc.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/lex.yy.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/lex.yy.cc.o -c /home/wangp/oop/CopyDetect/src/lex.yy.cc
 
 src/CMakeFiles/CopyDetect.dir/lex.yy.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/lex.yy.cc.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/lex.yy.cc > CMakeFiles/CopyDetect.dir/lex.yy.cc.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/lex.yy.cc > CMakeFiles/CopyDetect.dir/lex.yy.cc.i
 
 src/CMakeFiles/CopyDetect.dir/lex.yy.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/lex.yy.cc.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/lex.yy.cc -o CMakeFiles/CopyDetect.dir/lex.yy.cc.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/lex.yy.cc -o CMakeFiles/CopyDetect.dir/lex.yy.cc.s
 
 src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o.requires:
 
@@ -155,16 +155,16 @@ src/CMakeFiles/CopyDetect.dir/lex.yy.cc.o.provides.build: src/CMakeFiles/CopyDet
 
 src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o: ../src/Lexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/Lexer.cpp.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/Lexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/Lexer.cpp.o -c /home/wangp/oop/CopyDetect/src/Lexer.cpp
 
 src/CMakeFiles/CopyDetect.dir/Lexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/Lexer.cpp.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/Lexer.cpp > CMakeFiles/CopyDetect.dir/Lexer.cpp.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/Lexer.cpp > CMakeFiles/CopyDetect.dir/Lexer.cpp.i
 
 src/CMakeFiles/CopyDetect.dir/Lexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/Lexer.cpp.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/Lexer.cpp -o CMakeFiles/CopyDetect.dir/Lexer.cpp.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/Lexer.cpp -o CMakeFiles/CopyDetect.dir/Lexer.cpp.s
 
 src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o.requires:
 
@@ -179,16 +179,16 @@ src/CMakeFiles/CopyDetect.dir/Lexer.cpp.o.provides.build: src/CMakeFiles/CopyDet
 
 src/CMakeFiles/CopyDetect.dir/Detector.cpp.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/Detector.cpp.o: ../src/Detector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/CopyDetect.dir/Detector.cpp.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/Detector.cpp.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/CopyDetect.dir/Detector.cpp.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/Detector.cpp.o -c /home/wangp/oop/CopyDetect/src/Detector.cpp
 
 src/CMakeFiles/CopyDetect.dir/Detector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/Detector.cpp.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.cpp > CMakeFiles/CopyDetect.dir/Detector.cpp.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/Detector.cpp > CMakeFiles/CopyDetect.dir/Detector.cpp.i
 
 src/CMakeFiles/CopyDetect.dir/Detector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/Detector.cpp.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/Detector.cpp -o CMakeFiles/CopyDetect.dir/Detector.cpp.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/Detector.cpp -o CMakeFiles/CopyDetect.dir/Detector.cpp.s
 
 src/CMakeFiles/CopyDetect.dir/Detector.cpp.o.requires:
 
@@ -203,16 +203,16 @@ src/CMakeFiles/CopyDetect.dir/Detector.cpp.o.provides.build: src/CMakeFiles/Copy
 
 src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o: ../src/FingerPrint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o -c /home/wangp/oop/CopyDetect/src/FingerPrint.cpp
 
 src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/FingerPrint.cpp.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.cpp > CMakeFiles/CopyDetect.dir/FingerPrint.cpp.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/FingerPrint.cpp > CMakeFiles/CopyDetect.dir/FingerPrint.cpp.i
 
 src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/FingerPrint.cpp.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/FingerPrint.cpp -o CMakeFiles/CopyDetect.dir/FingerPrint.cpp.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/FingerPrint.cpp -o CMakeFiles/CopyDetect.dir/FingerPrint.cpp.s
 
 src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o.requires:
 
@@ -227,16 +227,16 @@ src/CMakeFiles/CopyDetect.dir/FingerPrint.cpp.o.provides.build: src/CMakeFiles/C
 
 src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o: src/CMakeFiles/CopyDetect.dir/flags.make
 src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o: ../src/CalcFingerPrintStrategy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o -c /home/zhang/courses/OOP/team_proj/CopyDetect/src/CalcFingerPrintStrategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o"
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o -c /home/wangp/oop/CopyDetect/src/CalcFingerPrintStrategy.cpp
 
 src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.i"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zhang/courses/OOP/team_proj/CopyDetect/src/CalcFingerPrintStrategy.cpp > CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.i
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wangp/oop/CopyDetect/src/CalcFingerPrintStrategy.cpp > CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.i
 
 src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.s"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zhang/courses/OOP/team_proj/CopyDetect/src/CalcFingerPrintStrategy.cpp -o CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.s
+	cd /home/wangp/oop/CopyDetect/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wangp/oop/CopyDetect/src/CalcFingerPrintStrategy.cpp -o CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.s
 
 src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o.requires:
 
@@ -273,8 +273,8 @@ CopyDetect_EXTERNAL_OBJECTS =
 ../bin/CopyDetect: src/CMakeFiles/CopyDetect.dir/CalcFingerPrintStrategy.cpp.o
 ../bin/CopyDetect: src/CMakeFiles/CopyDetect.dir/build.make
 ../bin/CopyDetect: src/CMakeFiles/CopyDetect.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zhang/courses/OOP/team_proj/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../../bin/CopyDetect"
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CopyDetect.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wangp/oop/CopyDetect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ../../bin/CopyDetect"
+	cd /home/wangp/oop/CopyDetect/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CopyDetect.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/CopyDetect.dir/build: ../bin/CopyDetect
@@ -293,10 +293,10 @@ src/CMakeFiles/CopyDetect.dir/requires: src/CMakeFiles/CopyDetect.dir/CalcFinger
 .PHONY : src/CMakeFiles/CopyDetect.dir/requires
 
 src/CMakeFiles/CopyDetect.dir/clean:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build/src && $(CMAKE_COMMAND) -P CMakeFiles/CopyDetect.dir/cmake_clean.cmake
+	cd /home/wangp/oop/CopyDetect/build/src && $(CMAKE_COMMAND) -P CMakeFiles/CopyDetect.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/CopyDetect.dir/clean
 
 src/CMakeFiles/CopyDetect.dir/depend:
-	cd /home/zhang/courses/OOP/team_proj/CopyDetect/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhang/courses/OOP/team_proj/CopyDetect /home/zhang/courses/OOP/team_proj/CopyDetect/src /home/zhang/courses/OOP/team_proj/CopyDetect/build /home/zhang/courses/OOP/team_proj/CopyDetect/build/src /home/zhang/courses/OOP/team_proj/CopyDetect/build/src/CMakeFiles/CopyDetect.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wangp/oop/CopyDetect/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wangp/oop/CopyDetect /home/wangp/oop/CopyDetect/src /home/wangp/oop/CopyDetect/build /home/wangp/oop/CopyDetect/build/src /home/wangp/oop/CopyDetect/build/src/CMakeFiles/CopyDetect.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/CopyDetect.dir/depend
 
