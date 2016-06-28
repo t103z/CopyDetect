@@ -21,10 +21,7 @@ Lexer::~Lexer()
 
 void CPPLexer::Lex()
 {
-    while (yylex())
-    {
-        std::cout << yytext;
-    }
+    while (yylex());
 }
 
 const std::string CPPLexer::name() const

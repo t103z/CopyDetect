@@ -43,17 +43,18 @@ FingerPrint::hash_t WinnowingStrategy::ComputeNextHash(int hash_num, std::string
     }
     return HashValue;
 }
-std::vector<FingerPrint> &&WinnowingStrategy::GetFingerPrint(std::istream &input, const std::string &name, size_t id)
+std::vector<FingerPrint> WinnowingStrategy::GetFingerPrint(std::istream &input, const std::string &name, size_t id)
 {
     using namespace std;
     vector<FingerPrint> fp;
     //TODO
-    istringstream stringinput = dynamic_cast<istringstream>(input);
+    stringstream stringinput;
+    stringinput << input.rdbuf();
     string str = stringinput.str();
     //better need to input the k-gram number and window-len number by the user
     //when calling this function
     Set_K_gram(5);
-    Set_Window_len(4);
+    Set_Window_len(6);
 
     FingerPrint::hash_t * h = new FingerPrint::hash_t (window_len);
     fp.clear();
@@ -80,7 +81,7 @@ std::vector<FingerPrint> &&WinnowingStrategy::GetFingerPrint(std::istream &input
         h[right_end] = ComputeNextHash(count,str);
 
         if(min_index == right_end) {
-            for(int i = (right_end - 1) % window_len; i != right_end; i = (i - 1 + window_len) % window_len) {
+            for(int i = (right_end - 1 + window_len) % window_len; i != right_end; i = (i - 1 + window_len) % window_len) {
                 if(h[i] < h[min_index]) {
                     min_index = i;
                 }
@@ -105,6 +106,6 @@ std::vector<FingerPrint> &&WinnowingStrategy::GetFingerPrint(std::istream &input
         }
     }
 
-    return std::move(fp);
+    return fp;
 }
 

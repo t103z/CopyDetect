@@ -57,7 +57,7 @@ void Detector::Check(std::ostream &output)
     // find top matching
     size_t max_times = 0, f1 = 0, f2 = 0;
     for (size_t i = 0; i < _docs.size(); ++i)
-        for (size_t j = i; j < _docs.size(); ++i)
+        for (size_t j = i; j < _docs.size(); ++j)
             if (matches[i][j] > max_times)
             {
                 f1 = i;
@@ -76,8 +76,8 @@ void Detector::Check(std::ostream &output)
         for (auto fp2 : _docs[f2]->FingerPrints())
             if (fp1.key == fp2.key)
             {
-                line_matches[cnt].line1 = fp1.info.id;
-                line_matches[cnt].line2 = fp2.info.id;
+                line_matches[cnt].line1 = fp1.info.line_number;
+                line_matches[cnt].line2 = fp2.info.line_number;
                 cnt++;
             }
 
@@ -123,21 +123,21 @@ void Detector::Check(std::ostream &output)
     // output
     sort(para_matches.begin(), para_matches.end(), [](const Paragraph &a, const Paragraph &b)-> bool
     {
-        return a.size < b.size;
+        return a.size > b.size;
     });
     string name1 = _docs[f1]->name();
     string name2 = _docs[f2]->name();
     for (auto it = para_matches.begin(); it != para_matches.end(); it++)
     {
-        output << "--------------------------------------------------------------";
+        output << "------------------------------------------------------------------" << endl;
         output << "Match from line " << it->beg1 << " in file " << name1 << " and line " << it->beg2
                 << " in file " << name2 << " :" << endl;
         for (int i = 0; i < it->size; ++i)
         {
             output << "1:\t" << _docs[f1]->GetLine(it->beg1 + i) << endl;
-            output << "2:\t" << _docs[f2]->GetLine(it->beg2 + i) << endl << endl;
+            output << "2:\t" << _docs[f2]->GetLine(it->beg2 + i) << endl;
         }
-        output << "--------------------------------------------------------------" << endl;
+        output << "------------------------------------------------------------------" << endl;
     }
 }
 

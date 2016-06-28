@@ -12,7 +12,7 @@
 class CalcFingerPrintStrategy
 {
 public:
-    virtual std::vector<FingerPrint> &&GetFingerPrint(std::istream &input, const std::string &name, size_t id) = 0;
+    virtual std::vector<FingerPrint> GetFingerPrint(std::istream &input, const std::string &name, size_t id) = 0;
 };
 
 class WinnowingStrategy : public CalcFingerPrintStrategy
@@ -24,7 +24,7 @@ private:
     FingerPrint::hash_t HashValue;
     FingerPrint::hash_t ComputeNextHash(int hash_num, std::string &str);
 public:
-    virtual std::vector<FingerPrint> &&GetFingerPrint(std::istream &input, const std::string &name, size_t id);
+    virtual std::vector<FingerPrint> GetFingerPrint(std::istream &input, const std::string &name, size_t id);
     void Set_K_gram(int _k_gram_len);
     int Get_K_gram();
     void Set_Window_len(int _window_len);

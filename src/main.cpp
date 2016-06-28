@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 
     // detect
     Detector detector(docs);
+    detector.Check(cout);
 
     return 0;
 }
