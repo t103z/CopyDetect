@@ -29,9 +29,15 @@ CMPDocument::CMPDocument(const CMPDocument &doc) : Document(doc), _lexer(doc._le
 
 CPPDocument::CPPDocument(const std::string &filename, std::size_t id) : CMPDocument(filename, id)
 {
+    //取消本函数中的注释可以将转换后的文本和fingerprint输出到文件
+
     _stream.clear();
     _stream.seekg(0, _stream.beg);
-    _lexer = new NaiveLexer(&_stream, &_token_stream);
+
+
+    //调试时如果需要输出原文，将下面这一行注释掉，然后把再下面一行取消注释
+    _lexer = new CPPLexer(&_stream, &_token_stream);
+    //_lexer = new NaiveLexer(&_stream, &_token_stream);
     tokenize();
 
 //    std::ofstream fout(filename + ".out");
