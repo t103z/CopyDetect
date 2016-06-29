@@ -26,10 +26,12 @@ FingerPrint::hash_t WinnowingStrategy::ComputeNextHash(int hash_num, std::string
     static const int p = 6999997; //hash mod
     static const int k = 257;     //hash seed
     if(hash_num == 1) {
+        HashBase = 1;
         for(int i = 0; i < k_gram_len; i++) {
             HashBase = (HashBase * k) % p;
             //compute the k^k_gram_ken-1 so that time can be saved
         }
+        HashValue = 0;
         for(int i = 0; i < k_gram_len; i++) {
             HashValue = (HashValue * k + str[i]) % p;
             //compute the first Hash value in order to do rolling hash later
@@ -37,6 +39,8 @@ FingerPrint::hash_t WinnowingStrategy::ComputeNextHash(int hash_num, std::string
     }
     else {
         HashValue = (HashValue * k + str[hash_num + k_gram_len - 2] - str[hash_num - 2] * HashBase) % p;
+
+       // HashValue = (HashValue * k)
         if(HashValue < 0) {
             HashValue += p;
         }
@@ -47,7 +51,7 @@ std::vector<FingerPrint> WinnowingStrategy::GetFingerPrint(std::istream &input, 
 {
     using namespace std;
     vector<FingerPrint> fp;
-    //TODO
+
     stringstream stringinput;
     stringinput << input.rdbuf();
     string str = stringinput.str();

@@ -35,13 +35,13 @@ CPPDocument::CPPDocument(const std::string &filename, std::size_t id) : CMPDocum
     _stream.seekg(0, _stream.beg);
 
 
-    //调试时如果需要输出原文，将下面这一行注释掉，然后把再下面一行取消注释
-    _lexer = new CPPLexer(&_stream, &_token_stream);
-    //_lexer = new NaiveLexer(&_stream, &_token_stream);
+    //调试时如果需要输出原文，将下面这一行注释掉，然后把再下面一行取消注释,否则输出的是转换后的文本
+    //_lexer = new CPPLexer(&_stream, &_token_stream);
+    _lexer = new NaiveLexer(&_stream, &_token_stream);
     tokenize();
 
-//    std::ofstream fout(filename + ".out");
-//    fout << _token_stream.str();
+    std::ofstream fout(filename + ".out");
+    fout << _token_stream.str();
 
 
     _fingerprint_strategy = new WinnowingStrategy();
@@ -49,11 +49,11 @@ CPPDocument::CPPDocument(const std::string &filename, std::size_t id) : CMPDocum
     _token_stream.seekg(0, _stream.beg);
     _finger_prints = _fingerprint_strategy->GetFingerPrint(_token_stream, _name, _id);
 
-//    for (auto fp : _finger_prints)
-//    {
-//        fout << fp.key << " : " << fp.info.line_number << std::endl;
-//    }
-//
-//    fout.close();
+    for (auto fp : _finger_prints)
+    {
+        fout << fp.key << " : " << fp.info.line_number << std::endl;
+    }
+
+    fout.close();
 }
 
